@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        form{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 50px auto;
+            align-items: center;
+
+        }
+        #personal-info, #skill, #education{
+            color: #333;
+            text-align: center;
+        }
+        #submit, #reset{
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            align-items: center;
+        }
+        input, label{
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        video#myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        
+    </style>
+</head>
+<body>
+     <video autoplay muted loop id="myVideo">
+        <source src="./Registration_Form_Background_Video_Created.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <form>
+        <fieldset>
+            <legend id="personal-info">Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="mname">Middle Name:</label>
+            <input type="text" id="mname" name="mname"><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend id="skill">Skill</legend>
+            <input type="checkbox" id="html" name="skill" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="skill" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="js" name="skill" value="JavaScript">
+            <label for="js">JavaScript</label><br>
+            <label for="other">Other:</label>
+            <input type="text" id="other" name="other">
+        </fieldset>
+        <fieldset>
+            <legend id="education">Your Higher Education Qualification</legend>
+            <input type="radio" id="highschool" name="education" value="High School">
+            <label for="highschool">High School</label><br>
+            <input type="radio" id="pre-high" name="education" value="Pre-High School">
+            <label for="pre-high">Pre-High School</label><br>
+            <input type="radio" id="bachelor" name="education" value="Bachelor">
+            <label for="bachelor">Bachelor</label><br>
+            <input type="radio" id="master" name="education" value="Master">
+            <label for="master">Master</label>
+        </fieldset>
+        <fieldset>
+            <legend id="address">Address</legend>
+            <label for="street">Street:</label>
+            <textarea id="street" name="street" rows="4" cols="50"></textarea><br><br>
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street"><br><br>
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <option value="">Select a city</option>
+                <option value="Mangalore">Mangalore</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chicago">Chicago</option>
+            </select><br><br>
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="">Select a state</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Illinois">Illinois</option>
+                <option value="California">California</option>
+            </select><br><br>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip"><br><br>
+        </fieldset>
+        <button id="submit" action="./marquee.html">Submit</button>
+        <button id="reset" type="reset" action="./registeration.html">Reset</button>
+    </form>
+
+</body>
+</html>
