@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes and Pseudo-elements</title>
+
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            margin-top: 50px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Pseudo-class */
+        button:hover {
+            background-color: lightblue;
+            color: black;
+        }
+
+        body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Button hover */
+button:hover {
+    background-color: lightyellow;
+    color: black;
+    border: 2px solid blue;
+}
+
+/* Input focus */
+input:focus {
+    border-color: lightblue;
+    outline: none;
+}
+
+/* Headings */
+h1:nth-child(1) {
+    background-color: aqua;
+    color: red;
+}
+
+h1:nth-of-type(2) {
+    color: rgb(0, 255, 26);
+}
+
+/* Links */
+a:link {
+    color: orangered;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: red;
+}
+
+/* Pseudo-element */
+p::first-line {
+    font-weight: bold;
+}
+    </style>
+</head>
+
+<body>
+    <button>Click me</button>
+
+    <br>
+
+    <input type="text" placeholder="Focus on me!" />
+    <p>Enter some text here</p>
+
+    <a href="#">Click here</a>
+
+    <div id="box">
+        <h1>Hazeez</h1>
+        <h1>Hazeez</h1>
+        <h1>Hazeez</h1>
+        <h1>Hazeez</h1>
+        <h1>Hazeez</h1>
+        <h1>Hazeez</h1>
+    </div>
+</body>
+</html>
