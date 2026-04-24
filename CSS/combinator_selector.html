@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .A {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        /* Fixed: use class instead of duplicate ID */
+        #parent .hero {
+            color: red;
+        }
+
+        #parent {
+            color: blue;
+        }
+
+        #parent #child h2 {
+            color: green;
+        }
+
+        #parent #child span {
+            color: orange;
+        }
+
+        /* Box style */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid black;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(255,255,255,0.2);
+        }
+
+        /* Adjacent sibling selector */
+        .sibling + p {
+            color: rgb(157, 0, 255);
+        }
+
+        /* General sibling selector */
+        .sibling2 ~ p {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="A"> 
+        <div id="parent">
+            <p class="hero">This is a paragraph inside the parent div.</p>
+            <span class="hero">This is a span inside the parent div.</span>
+
+            <section id="child">
+                <h2>This is a paragraph inside the section.</h2>
+                <span>This is a span inside the section.</span>
+                <h1>This is a heading inside the section.</h1>
+            </section>
+        </div>
+    </div>
+
+    <!-- Box added -->
+    <div class="box"></div>
+
+    <!-- Adjacent sibling example -->
+    <div class="sibling">
+        <p>This is a paragraph inside the sibling div.</p>
+        <p>This is another paragraph inside sibling.</p>
+    </div>
+
+    <p>This paragraph is affected by + selector</p>
+
+    <!-- General sibling example -->
+    <div class="sibling2"></div>
+    <span>This is a span outside the sibling div.</span>
+    <p>This paragraph is affected by ~ selector</p>
+
+</body>
+</html>
