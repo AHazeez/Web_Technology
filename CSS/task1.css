@@ -33,12 +33,11 @@ body {
 .search {
     display: flex;
     align-items: center;
-    background: linear-gradient(90deg, #6a11cb, #7b2ff7);
+    background: #712cf9;
     padding: 6px 10px;
     border-radius: 8px;
     width: 280px;
     height: 30px;
-    border: 10px whitesmoke ;
 }
 
 .search input {
@@ -47,6 +46,7 @@ body {
     background: transparent;
     color: white;
     flex: 1;
+    border: black;
 }
 
 .search span {
@@ -74,4 +74,6 @@ a:hover {
 input[type="text"]::placeholder {
     color: rgb(211, 211, 211);
     font-size: 14px;
+    border: white;
+    border-radius: 10px;
 }

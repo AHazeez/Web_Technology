@@ -3,29 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page </title>
+    <title>Product Card</title>
     <link rel="stylesheet" href="index1.css">
 </head>
 <body>
 
-    <header>
-        <div id="logo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp1OAThKXjLTYHrzvui0BJ7BdTXHKohYJfeA&s" alt="Logo">
+<header>
+    <nav>
+        <div id="logo-container">
+            <img src="https://png.pngitem.com/pimgs/s/71-710906_transparent-michael-jackson-png-michael-jackson-dance-pose.png" alt="logo">
+            <span>Moon<b>Walk</b></span>
         </div>
 
         <div id="search-container">
-            <input type="text" id="search" placeholder="Search... ">
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-            </svg>
-
+            <input type="text" placeholder="Search...">
         </div>
 
         <div id="menu-container">
-            Menu
+            <a href="">Dashboard</a>
+            <a href="">Collections</a>
+            <a href="">Brands</a>
         </div>
-    </header>
+    </nav>
+</header>
 
+<main id="main-container">
+    <div class="product-card">
+
+        <section class="img-container">
+            <img src="https://images.pexels.com/photos/57421/running-shoe-shoe-asics-highly-functional-57421.jpeg" alt="shoe">
+        </section>
+
+        <section class="info-container">
+            <h5>Nike Shoe</h5>
+            <button>Buy Now</button>
+        </section>
+         
+    </div>
+</main>
 </body>
 </html>
