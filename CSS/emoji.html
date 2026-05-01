@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji</title>
+    <style>
+        #main-container{
+            width:200px;
+            height:200px;           
+            border: 1px solid;
+            border-radius: 50%;
+            position: relative;
+            left:220px;
+            top: 50px;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(orange,yellow,orange );
+           
+        }
+        #left{
+            width:40px;
+            height:40px;
+            border: 1px solid;
+            border-radius: 50%;
+            position: relative;
+            left:120px;
+            top: 50px;
+            background-color:white;
+        }
+        #right{
+            width:40px;
+            height:40px;
+            border: 1px solid;
+            border-radius: 50%;
+            position: relative;
+            right:-40px;
+            top: 10px;
+            background-color:white
+        }
+        #ball1{
+            width:25px;
+            height:25px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: black;
+            position:relative;
+            top:13px;
+            left:5px;
+
+        }
+         #ball2{
+            width:25px;
+            height:25px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: black;
+            position:relative;
+            top:13px;
+            left:5px;            
+       
+        }
+        #face{
+            width:50px ;
+            background-color: black;
+            position:absolute;
+            border:1px solid;
+            left: 75px;
+            bottom: 50px;
+        }
+        div:hover{
+              transform: scale(2.03);
+              transform: translateY(-10px);
+                 transform: translateY(auto);
+                 animation-duration: ;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="left">
+            <div id="ball1"></div>
+        </div>
+        <div id="right">
+            <div id="ball2"></div>
+        </div>
+        <div id="face"></div>
+    </div>
+    
+</body>
+</html>
