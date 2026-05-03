@@ -6,11 +6,23 @@
     <title>Emoji</title>
     <style>
         @keyframes change{
-          100%  {
-            tranform:translate(0px,-1px);
+          0% {
+            transform:translate(0px,-2px);
             }
-            60%,50%,70%,,80%,90%,100%{
-                   tranform:translate(0px,-35px);
+            60%,50%,70%,80%,90%,100%{
+                   transform:translate(0px,-15px);
+
+            }
+
+        }
+           @keyframes killer{
+          0% {
+            transform:translate(0px,-2px);
+            }
+            60%,50%,70%,80%,90%,100%{
+                   transform:translate(0px,-15px);
+                   width: 30px;
+                   height: 50px;
 
             }
 
@@ -37,7 +49,6 @@
             left:120px;
             top: 50px;
             background-color:white;
-            animation: change 2s infinite;
         }
         #right{
             width:40px;
@@ -48,7 +59,6 @@
             right:-40px;
             top: 10px;
             background-color:white;
-             animation: change 2s infinite;
 
         }
         #ball1{
@@ -60,6 +70,7 @@
             position:relative;
             top:13px;
             left:5px;
+            animation: change 2s infinite;
 
         }
          #ball2{
@@ -70,18 +81,24 @@
             background-color: black;
             position:relative;
             top:13px;
-            left:5px;            
+            left:5px;  
+            animation: change 2s infinite;          
        
         }
-        #face{
-            width:50px ;
-            background-color: black;
-            position:absolute;
-            border:1px solid;
-            border-bottom: 50%;
-            left: 75px;
-            bottom: 50px;
-        }
+        #face {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+
+    border: 5px solid black;
+    border-top: none;              /* remove top line */
+    border-radius: 50% 50% 10px 10px;  /* curve bottom */
+
+    left: 60px;
+    bottom: 40px;
+
+    animation: killer 2s infinite;
+}
        
 
     </style>
