@@ -404,6 +404,8 @@ video {
     width: 100%;
     scroll-snap-align: start;
     top: -40%;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
 }
 
 .section-features::before {
